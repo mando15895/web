@@ -1,0 +1,123 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Navbar */
+.header {
+  background:#004d40; ;
+  color: #ffffff;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.header .nav a:hover {
+  text-decoration: underline;
+}
+
+
+/* Contact Section */
+.contact-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact-section h1 {
+  margin-bottom: 30px;
+  color: #004d40;
+}
+
+.map-container {
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #004d40;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #00332c;
+}
+
+.contact-info {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #004d40;
+  font-weight: bold;
+}
+
+.btn-copy {
+  background: #00695c;
+  color: white;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-copy:hover {
+  background: #004d40;
+}
+
+/* Footer */
+.footer {
+  background: #004d40;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.social-media {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.social-media a:hover img {
+  transform: scale(1.2);
+}
