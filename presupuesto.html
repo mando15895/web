@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitar Presupuesto - MS COLLECTOR</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">MS COLLECTOR</div>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="presupuesto.html" class="active">Presupuesto</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Presupuesto -->
+  <section class="form-section">
+    <h1>Solicitar Presupuesto</h1>
+    <form id="presupuestoForm">
+      
+      <!-- Datos de contacto -->
+      <fieldset>
+        <legend>Datos de contacto</legend>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" maxlength="15" required>
+        <span class="error" id="nombreError"></span>
+
+        <label for="apellido">Apellidos:</label>
+        <input type="text" id="apellido" maxlength="40" required>
+        <span class="error" id="apellidoError"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <span class="error" id="emailError"></span>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" pattern="\d{9}" required>
+        <span class="error" id="telefonoError"></span>
+      </fieldset>
+
+      <!-- Presupuesto -->
+      <fieldset>
+        <legend>Presupuesto</legend>
+
+        <label for="producto">Producto:</label>
+        <select id="producto">
+          <option value="0">Seleccione un producto</option>
+          <option value="15">Starter Deck (€15)</option>
+          <option value="80">Booster Box (€80)</option>
+          <option value="5">Sobre (€5)</option>
+        </select>
+
+        <label for="plazo">Plazo de entrega (meses):</label>
+        <input type="number" id="plazo" min="1" max="12" value="1">
+        <p>Cada mes de plazo baje el precio en un 5%.</p>
+
+        <label>Extras:</label>
+        <div>
+          <label><input type="checkbox" class="extra" value="25"> Sealed kit (€25)</label>
+          <label><input type="checkbox" class="extra" value="10"> Fundas aleatorias (€10)</label>
+          <label><input type="checkbox" class="extra" value="5"> Sobre aleatorio (€5)</label>
+        </div>
+      </fieldset>
+
+      <!-- Presupuesto Final -->
+      <div class="form-summary">
+        <h3>Presupuesto Final: <span id="presupuestoFinal">€0</span></h3>
+      </div>
+
+      <!-- Aceptación de términos -->
+      <label>
+        <input type="checkbox" id="privacidad" required>
+        Acepto la Política de privacidad.
+      </label>
+      <span class="error" id="privacidadError"></span>
+
+      <!-- Botones -->
+      <div class="form-actions">
+        <button type="submit" class="btn-submit">Enviar</button>
+        <button type="reset" class="btn-reset">Reset</button>
+      </div>
+      <span class="success" id="formSuccess"></span>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 MS COLLECTOR. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="Js/javascript3.js"></script>
+</body>
+</html>

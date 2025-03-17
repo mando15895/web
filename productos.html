@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos - MS COLLECTOR</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">MS COLLECTOR</div>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html" class="active">Productos</a>
+        <a href="presupuesto.html">Presupuesto</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <section class="productos-section">
+      <h1>Nuestros Productos</h1>
+
+      <!-- Barra de búsqueda -->
+      <div class="search-bar">
+        <input id="searchField" type="text" placeholder="Buscar producto" class="search-input">
+        <button id="searchButton" class="search-button">Buscar</button>
+      </div>
+
+      <!-- Lista de productos (Generada dinámicamente) -->
+      <div id="productList" class="product-grid"></div>
+      
+      <!-- Mensaje si no hay productos encontrados -->
+      <p id="noResults" class="hidden">No se encontraron productos.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 MS COLLECTOR. Todos los derechos reservados.</p>
+      <div class="social-media">
+        <a href="https://facebook.com" target="_blank">
+          <img src="imagenes/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="imagenes/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="imagenes/x.png" alt="Twitter">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="Js/javascript2.js"></script>
+</body>
+</html>

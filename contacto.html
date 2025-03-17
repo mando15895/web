@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - MS COLLECTOR</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">MS COLLECTOR</div>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="presupuesto.html">Presupuesto</a>
+        <a href="contacto.html" class="active">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección de contacto -->
+  <main class="container">
+    <section class="contact-section">
+      <h1>Contacto</h1>
+      <p>📍 <strong>Ubicación:</strong> Plaza La Viña, Alicante, España</p>
+      <p>📧 <strong>Email:</strong> <span id="emailContacto">exmando158@gmail.com</span> <button id="copiarEmail">📋 Copiar</button></p>
+      <p>📞 <strong>Teléfono:</strong> <span id="telefonoContacto">+34 635 105 801</span> <button id="copiarTelefono">📋 Copiar</button></p>
+    </section>
+
+    <!-- Mapa dinámico -->
+    <div class="map-container">
+      <div id="map" style="height: 450px;"></div>
+      <button id="openGoogleMaps">Abrir en Google Maps</button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 MS COLLECTOR. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="Js/javascript4.js"></script>
+</body>
+</html>
